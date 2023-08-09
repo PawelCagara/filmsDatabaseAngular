@@ -9,9 +9,8 @@ import { Film, CreatedFilmsService } from '../film';
 export class FilmtListComponent implements OnInit{
   films: Film[] = [];
 
-  constructor(public createdContactsService: CreatedFilmsService){}
+  constructor(public createdFilmsService: CreatedFilmsService){}
   ngOnInit(): void {
-    this.films = this.createdContactsService.getFilms();
+    this.films = this.createdFilmsService.getFilms();
   }
-
 }

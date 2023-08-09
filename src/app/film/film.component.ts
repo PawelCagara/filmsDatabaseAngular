@@ -12,12 +12,12 @@ export class FilmComponent {
   id!: number;
 
   constructor(
-    public createdContactsService: CreatedFilmsService,
+    public createdFilmsService: CreatedFilmsService,
     private route: ActivatedRoute
   ) {}
   ngOnInit(): void {
     this.id = Number(this.route.snapshot.paramMap.get('id'));
-    this.film = this.createdContactsService
+    this.film = this.createdFilmsService
       .getFilms()
       .find((el) => el.id === this.id);
   }

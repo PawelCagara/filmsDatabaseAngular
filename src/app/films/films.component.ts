@@ -18,11 +18,11 @@ export class FilmsComponent implements OnInit {
   userForm = this.fb.group({
     title: [
       '',
-      //[Validators.required, Validators.minLength(3), whiteSpacesValidator],
+      [Validators.required, Validators.minLength(1), whiteSpacesValidator],
     ],
     year: [
       '',
-      //[Validators.required, Validators.minLength(4), whiteSpacesValidator],
+      [Validators.required, Validators.minLength(4), whiteSpacesValidator],
     ],
     director: ['', ],
     stars: ['', ],

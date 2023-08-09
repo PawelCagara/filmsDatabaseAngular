@@ -34,7 +34,7 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></scri
   <input type="text" class="form-control"  placeholder="Enter your review" name="review" formControlName = "review">
 </div>
 
-<button type="submit" class="btn btn-default">Add film</button>
+<button [disabled]="!userForm.valid" type="submit" class="btn btn-default">Add film</button>
 </form>
 
 

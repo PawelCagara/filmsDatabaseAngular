@@ -1,8 +1,7 @@
 <h1>Films</h1>
 <div *ngFor="let film of films">
-  <div>{{ film.title }} &nbsp; {{ film.year }}</div>
-  <div>
-    <a routerLink="/films/{{film.id}}">View</a>
+  <div><h4>Title:  {{ film.title }}  Year: {{ film.year }}</h4>
+    <button type ="submit" class="btn btn-info" a routerLink = "/films/{{film.id}}">Check film details</button> 
   </div>
 </div>
 
