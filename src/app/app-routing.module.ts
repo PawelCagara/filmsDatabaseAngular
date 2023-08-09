@@ -4,6 +4,7 @@ import { FilmsComponent } from './films/films.component';
 import { FilmtListComponent } from './film-list/film-list.component';
 import { FilmComponent } from './film/film.component';
 
+
 const routes: Routes = [
   {
     path: 'films',
@@ -16,7 +17,7 @@ const routes: Routes = [
   {
     path: 'newFilm',
     component: FilmsComponent,
-  }
+  },
 ];
 
 @NgModule({

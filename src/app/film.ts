@@ -7,14 +7,17 @@ export class CreatedFilmsService {
   films: Film[] = [];
   constructor() {}
 
-  addFilm(film: Film){
+  addFilm(film: Film ) {
     this.films.push(film);
   }
 
-  getFilms(){
+  getFilms() {
     return this.films;
   }
 
+  removeFilm(id: number) {
+    this.films.splice(id-1,1);
+  }
 }
 
 export class Film {

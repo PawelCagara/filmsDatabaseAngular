@@ -30,7 +30,6 @@ export class FilmsComponent implements OnInit {
   });
 
   ngOnInit(): void {}
-
   submit(event: Event) {
     this.createdFilms.addFilm(
       new Film(

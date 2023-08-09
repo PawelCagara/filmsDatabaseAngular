@@ -14,6 +14,15 @@
     <div class = "form-group">
     <label >Review:</label> {{film?.review}}
 </div>
-</h4>  
+
+<div class = "form-group">
+<label >Id:</label> {{film?.id}}
+</div>
+
+</h4>
+
+<div>
+    <button type ="submit" class="btn btn-info" a routerLink = "/films/" (click)="delete()">Delete film</button> 
+</div>
 
 

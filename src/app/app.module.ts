@@ -9,6 +9,7 @@ import { FilmsComponent } from './films/films.component';
 import { FilmtListComponent } from './film-list/film-list.component';
 import { FilmComponent } from './film/film.component';
 
+
 @NgModule({
   declarations: [AppComponent, FilmsComponent, FilmtListComponent, FilmComponent],
   imports: [BrowserModule, AppRoutingModule, LayoutModule, ReactiveFormsModule],
