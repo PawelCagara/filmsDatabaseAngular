@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Film, CreatedFilmsService } from '../film';
-import { whiteSpacesValidator } from 'src/validators/whiteSpacesValidator';
+
 
 
 @Component({
@@ -18,11 +18,11 @@ export class FilmsComponent implements OnInit {
   userForm = this.fb.group({
     title: [
       '',
-      [Validators.required, Validators.minLength(1), whiteSpacesValidator],
+      [Validators.required, Validators.minLength(1)],
     ],
     year: [
       '',
-      [Validators.required, Validators.minLength(4), whiteSpacesValidator],
+      [Validators.required, Validators.minLength(4)],
     ],
     director: ['', ],
     stars: ['', ],
