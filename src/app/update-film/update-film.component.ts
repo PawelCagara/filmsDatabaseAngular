@@ -32,7 +32,7 @@ export class UpdateFilmComponent {
     ],
     year: [
       '',
-      [Validators.required, Validators.minLength(1), whiteSpacesValidator]       
+      [Validators.required, Validators.minLength(4), whiteSpacesValidator]       
     ],
     director: ['', ],
     stars: ['', ],
