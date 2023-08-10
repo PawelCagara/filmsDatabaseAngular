@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { CreatedFilmsService, Film } from '../film';
 import { ActivatedRoute } from '@angular/router';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
+import { whiteSpacesValidator } from 'src/validators/whiteSpacesValidator';
 
 @Component({
   selector: 'app-update-film',
@@ -26,10 +27,12 @@ export class UpdateFilmComponent {
 
   userForm = this.fb.group({
     title: [
-      '',      
+      '',
+      [Validators.required, Validators.minLength(1), whiteSpacesValidator]       
     ],
     year: [
-      '',      
+      '',
+      [Validators.required, Validators.minLength(1), whiteSpacesValidator]       
     ],
     director: ['', ],
     stars: ['', ],
