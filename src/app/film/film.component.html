@@ -22,7 +22,8 @@
 </h4>
 
 <div>
-    <button type ="submit" class="btn btn-info" a routerLink = "/films/" (click)="delete()">Delete film</button> 
+    <button type ="submit" class="btn btn-info" a routerLink = "/films/" (click)="delete()">Delete film</button>
+    <button type ="submit" class="btn btn-info" a routerLink = "/films/update/{{film?.id}}" (click)="update()">Update film</button> 
 </div>
 
 

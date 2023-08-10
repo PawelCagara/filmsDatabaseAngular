@@ -1,0 +1,44 @@
+<p>update-film works!</p>
+
+<!DOCTYPE html>  
+<html> 
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <head>  
+        <meta charset="ISO-8859-1">  
+        <title>Update film</title>  
+    </head>  
+    <body>  
+      <h1 style="text-align:center;">You can add movie to Database here</h1>
+ <form [formGroup] = "userForm" (ngSubmit)="submit($event)">    
+ <div class="form-group">
+  <label >Title:</label>
+  <input type="text" class="form-control"  placeholder={{film?.title}} name="title" formControlName = "title">
+</div>
+<div class="form-group">
+  <label >Year:</label>
+  <input type="text" class="form-control"  placeholder={{film?.year}} name="year" formControlName = "year">
+</div>
+<div class="form-group">
+  <label >Director:</label>
+  <input type="text" class="form-control"  placeholder={{film?.director}} name="director" formControlName = "director">
+</div>
+<div class="form-group">
+  <label >Stars:</label>
+  <input type="text" class="form-control"  placeholder={{film?.stars}} name="stars" formControlName = "stars">
+</div>
+<div class="form-group">
+  <label >Review:</label>
+  <input type="text" class="form-control"  placeholder={{film?.review}} name="review" formControlName = "review">
+</div>
+
+<button [disabled]="!userForm.valid" type="submit" (click)="submit($event)" class="btn btn-default" a routerLink = "/films/">Update film</button>
+</form>
+
+
+    </body>  
+</html>  

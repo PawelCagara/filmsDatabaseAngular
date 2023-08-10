@@ -18,6 +18,10 @@ export class CreatedFilmsService {
   removeFilm(id: number) {
     this.films.splice(id-1,1);
   }
+  updateFilm(id: number, film:Film) {
+    this.films.splice(id-1,1)
+    this.films.push(film)
+  }
 }
 
 export class Film {

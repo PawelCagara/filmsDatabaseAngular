@@ -8,10 +8,11 @@ import { LayoutModule } from './layout/layout.module';
 import { FilmsComponent } from './films/films.component';
 import { FilmtListComponent } from './film-list/film-list.component';
 import { FilmComponent } from './film/film.component';
+import { UpdateFilmComponent } from './update-film/update-film.component';
 
 
 @NgModule({
-  declarations: [AppComponent, FilmsComponent, FilmtListComponent, FilmComponent],
+  declarations: [AppComponent, FilmsComponent, FilmtListComponent, FilmComponent, UpdateFilmComponent],
   imports: [BrowserModule, AppRoutingModule, LayoutModule, ReactiveFormsModule],
   bootstrap: [AppComponent],
 })

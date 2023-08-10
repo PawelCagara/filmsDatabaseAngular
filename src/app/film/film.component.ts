@@ -26,4 +26,7 @@ export class FilmComponent {
     this.id = Number(this.route.snapshot.paramMap.get('id'));
     this.createdFilmsService.removeFilm(this.id); 
   }
+  update() {
+    
+  }
 }
